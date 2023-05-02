@@ -8,7 +8,7 @@ public class RentalStore {
 
     public void addMovie(Movie movie){
         Scanner s = new Scanner(System.in);
-        System.out.println("enter title of move : ");
+        System.out.println("enter title of move : ");c
         String name = s.next();
         int foundIdx = -1;
         for (int i = 1; i < movies.size(); i++)
