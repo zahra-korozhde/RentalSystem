@@ -4,17 +4,17 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class RentalStore {
-    ArrayList<Movie> movies = new ArrayList<Movie>();
+    ArrayList<Item> items = new ArrayList<Item>();
     ArrayList<Customer> customers = new ArrayList<Customer>();
 
 
-    public void addMovie(Movie movie) {
+    public void addItem(Item item) {
 
-        this.movies.add(movie);
+        this.items.add(item);
     }
 
-    public void removeMovie(Movie movie) {
-        this.movies.remove(movie);
+    public void removeItem(Item item) {
+        this.items.remove(item);
     }
 
     public void register(Customer customer) {
@@ -23,31 +23,31 @@ public class RentalStore {
 
     }
 
-    public ArrayList<Movie> getAvailbleMovie() {
-        ArrayList<Movie> availbeMovie = movies;
-        for(int i = 0 ; i < movies.size() ; i++){
-            if(movies.get(i).isAvailble() == false){
-                availbeMovie.remove(movies.get(i));
+    public ArrayList<Item> getAvailbleItem() {
+        ArrayList<Item> availbeItem = items;
+        for(int i = 0 ; i < items.size() ; i++){
+            if(items.get(i).isAvailble() == false){
+                availbeItem.remove(items.get(i));
             }
         }
-        return availbeMovie;
+        return availbeItem;
     }
-    public void rentMovie(Movie movie , Customer customer){
-        movie.setAvailble(false) ;
-        this.getAvailbleMovie().remove(movie);
-        int movieId = movie.getId();
+    public void rentItem(Item item , Customer customer){
+        item.setAvailble(false) ;
+        this.getAvailbleItem().remove(item);
+        int itemId = item.getId();
         int costomerId = customer.getId();
-        String s = Integer.toString(costomerId).concat(Integer.toString(movieId));
+        String s = Integer.toString(costomerId).concat(Integer.toString(itemId));
         int id = Integer.parseInt(s);
-        Rental r  = new Rental(movie ,customer ,id);
+        Rental r  = new Rental(item ,customer ,id);
         customer.rentals.add(r);
 
 
     }
-    public void returnMovie( Rental rental){
+    public void returnItem( Rental rental){
         rental.getCustomer().rentals.remove(rental);
-        rental.getMovie().setAvailble(true);
-        this.getAvailbleMovie().add(rental.getMovie());
+        rental.getItem().setAvailble(true);
+        this.getAvailbleItem().add(rental.getItem());
 
     }
     public Customer getCustomerById( int id ){
@@ -58,12 +58,12 @@ public class RentalStore {
         System.out.println("You are not customer! go out!");
         return null;
     }
-    public Movie getMovieById( int id ){
-        for (int i = 0; i <movies.size() ; i++) {
-            if (movies.get(i).getId() == id)
-                return movies.get(i);
+    public Item getItemById( int id ){
+        for (int i = 0; i <items.size() ; i++) {
+            if (items.get(i).getId() == id)
+                return items.get(i);
         }
-        System.out.println("This is not a movie!");
+        System.out.println("This is not a Item!");
         return null;
     }
 }

@@ -1,49 +1,22 @@
 import java.util.Date;
+import java.util.List;
 
-public class Movie {
-    private int id;
-    private String title;
-    private String genre;
+public class Movie extends Item {
     private String dirctor;
-    private Date releaseDate;
-    private boolean isAvailble;
+    private List<String> cast;
 
-
-    public Movie(int id, String title, String genre, String dirctor, Date releaseDate) {
+    public Movie(int id, String title, String genre, String dirctor, Date releaseDate, List<String> cast) {
+        super(id, title, genre, releaseDate);
         this.dirctor = dirctor;
-        this.id = id;
-        this.genre = genre;
-        this.title = title;
-        this.releaseDate = releaseDate;
+        this.cast = cast;
         isAvailble = true;
-    }
-
-
-    public int getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getGenre() {
-        return genre;
     }
 
     public String getDirctor() {
         return dirctor;
     }
 
-    public Date getReleaseDate() {
-        return releaseDate;
-    }
-
-    public boolean isAvailble() {
-        return isAvailble;
-    }
-
-    public void setAvailble(boolean availble) {
-        isAvailble = availble;
+    public List<String> getCast() {
+        return cast;
     }
 }
