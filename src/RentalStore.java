@@ -50,5 +50,12 @@ public class RentalStore {
         this.getAvailbleMovie().add(rental.getMovie());
 
     }
-
+    public Customer getCustomerById( int id ){
+        for (int i = 0; i <customers.size() ; i++) {
+            if (customers.get(i).getId() == id)
+                return customers.get(i);
+        }
+        System.out.println("You are mot customer! go out!");
+        return null;
+    }
 }
