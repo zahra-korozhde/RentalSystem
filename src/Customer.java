@@ -27,7 +27,7 @@ public class Customer {
         return email;
     }
 
-    ArrayList<Rental> rentals;
+    ArrayList<Rental> rentals = new ArrayList<Rental>();
 
     public Customer(String name, String address, String phone, String email, int id) {
         this.id = id;
