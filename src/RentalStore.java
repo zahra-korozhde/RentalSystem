@@ -4,23 +4,33 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class RentalStore {
-    ArrayList<Movie> movies;
-    ArrayList<Customer> customers;
-    Customer customer;
+    ArrayList<Movie> movies = new ArrayList<Movie>();
+    ArrayList<Customer> customers = new ArrayList<Customer>();
 
-    public void addMovie(Movie movie){
 
-        movies.add(movie);
+    public void addMovie(Movie movie) {
+
+        this.movies.add(movie);
     }
-    public void removeMovie(Movie movie){
-        movies.remove(movie);
+
+    public void removeMovie(Movie movie) {
+        this.movies.remove(movie);
     }
-    public void register( Customer customer){
-         Scanner scanner = new Scanner(System.in);
-        System.out.println("enter your id : ");
-         int id = scanner.nextInt();
+
+    public void register(Customer customer) {
+        this.customers.add(customer);
 
 
+    }
+
+    public ArrayList<Movie> getAvailbleMovie() {
+        ArrayList<Movie> availbeMovie = movies;
+        for(int i = 0 ; i < movies.size() ; i++){
+            if(movies.get(i).isAvailble() == false){
+                availbeMovie.remove(movies.get(i));
+            }
+        }
+        return availbeMovie;
     }
 
 }

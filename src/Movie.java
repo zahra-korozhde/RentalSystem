@@ -15,6 +15,7 @@ public class Movie {
         this.genre = genre;
         this.title = title;
         this.releaseDate = releaseDate;
+        isAvailble = true;
     }
 
 
