@@ -32,5 +32,23 @@ public class RentalStore {
         }
         return availbeMovie;
     }
+    public void rentMovie(Movie movie , Customer customer){
+        movie.setAvailble(false) ;
+        this.getAvailbleMovie().remove(movie);
+        int movieId = movie.getId();
+        int costomerId = customer.getId();
+        String s = Integer.toString(costomerId).concat(Integer.toString(movieId));
+        int id = Integer.parseInt(s);
+        Rental r  = new Rental(movie ,customer ,id);
+        customer.rentals.add(r);
+
+
+    }
+    public void returnMovie( Rental rental){
+        rental.getCustomer().rentals.remove(rental);
+        rental.getMovie().setAvailble(true);
+        this.getAvailbleMovie().add(rental.getMovie());
+
+    }
 
 }
