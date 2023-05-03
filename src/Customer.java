@@ -6,6 +6,27 @@ public class Customer {
     private String address;
     private String phone;
     private String email;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     ArrayList<Rental> rentals;
 
     public Customer(String name, String address, String phone, String email, int id) {

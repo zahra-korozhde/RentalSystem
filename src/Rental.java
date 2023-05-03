@@ -4,9 +4,9 @@ import java.util.Date;
 public class Rental {
 
     private int id ;
-    Movie movie = new Movie();
+    Movie movie ;
 
-    Customer customer = new Customer();
+    Customer customer ;
     private Date rentalDate;
     private Date returnDate;
 
