@@ -55,7 +55,15 @@ public class RentalStore {
             if (customers.get(i).getId() == id)
                 return customers.get(i);
         }
-        System.out.println("You are mot customer! go out!");
+        System.out.println("You are not customer! go out!");
+        return null;
+    }
+    public Movie getMovieById( int id ){
+        for (int i = 0; i <movies.size() ; i++) {
+            if (movies.get(i).getId() == id)
+                return movies.get(i);
+        }
+        System.out.println("This is not a movie!");
         return null;
     }
 }
