@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class RentalStore {
     ArrayList<Item> items = new ArrayList<Item>();
     ArrayList<Customer> customers = new ArrayList<Customer>();
+    boolean testt = false;
+    boolean test3 = false;
 
 
     public void addItem(Item item) {
@@ -25,45 +27,66 @@ public class RentalStore {
 
     public ArrayList<Item> getAvailbleItem() {
         ArrayList<Item> availbeItem = items;
-        for(int i = 0 ; i < items.size() ; i++){
-            if(items.get(i).isAvailble() == false){
+        for (int i = 0; i < items.size(); i++) {
+            if (items.get(i).isAvailble() == false) {
                 availbeItem.remove(items.get(i));
             }
         }
         return availbeItem;
     }
-    public void rentItem(Item item , Customer customer){
-        item.setAvailble(false) ;
+
+    public void rentItem(Item item, Customer customer) {
+        item.setAvailble(false);
         this.getAvailbleItem().remove(item);
         int itemId = item.getId();
         int costomerId = customer.getId();
         String s = Integer.toString(costomerId).concat(Integer.toString(itemId));
         int id = Integer.parseInt(s);
-        Rental r  = new Rental(item ,customer ,id);
+        Rental r = new Rental(item, customer, id);
         customer.rentals.add(r);
 
 
     }
-    public void returnItem( Rental rental){
+
+    public void returnItem(Rental rental) {
         rental.getCustomer().rentals.remove(rental);
         rental.getItem().setAvailble(true);
         this.getAvailbleItem().add(rental.getItem());
 
     }
-    public Customer getCustomerById( int id ){
-        for (int i = 0; i <customers.size() ; i++) {
-            if (customers.get(i).getId() == id)
+
+    public Customer getCustomerById(int id) {
+        for (int i = 0; i < customers.size(); i++) {
+            if (customers.get(i).getId() == id) {
+                testt = true;
+                System.out.println("welcome ! ");
                 return customers.get(i);
+
+            } else {
+                System.out.println("you are not customer ! ");
+            }
+
         }
-        System.out.println("You are not customer! go out!");
+
+
         return null;
     }
-    public Item getItemById( int id ){
-        for (int i = 0; i <items.size() ; i++) {
-            if (items.get(i).getId() == id)
+
+
+    public Item getItemById(int id) {
+        for (int i = 0; i < items.size(); i++) {
+            if (items.get(i).getId() == id) {
+                test3 = true;
+                System.out.println("ok!");
                 return items.get(i);
+            } else {
+                System.out.println("this is not item");
+            }
+
         }
-        System.out.println("This is not a Item!");
+
+
         return null;
     }
+
 }
