@@ -1,0 +1,514 @@
+{
+  "movies": [
+    {
+      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt",
+      "id": 1,
+      "title": "Inception",
+      "genre": "Sci-Fi",
+      "releaseDate": "Jul 16, 2010, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "cast": "Tim Robbins, Morgan Freeman",
+      "id": 2,
+      "title": "The Shawshank Redemption",
+      "genre": "Drama",
+      "releaseDate": "Sep 23, 1994, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "cast": "Christian Bale, Heath Ledger",
+      "id": 3,
+      "title": "The Dark Knight",
+      "genre": "Action",
+      "releaseDate": "Jul 18, 2008, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "cast": "John Travolta, Uma Thurman",
+      "id": 4,
+      "title": "Pulp Fiction",
+      "genre": "Crime",
+      "releaseDate": "Oct 14, 1994, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "cast": "Marlon Brando, Al Pacino",
+      "id": 5,
+      "title": "The Godfather",
+      "genre": "Crime",
+      "releaseDate": "Mar 24, 1972, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "cast": "Brad Pitt, Edward Norton",
+      "id": 6,
+      "title": "Fight Club",
+      "genre": "Drama",
+      "releaseDate": "Oct 15, 1999, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "cast": "Keanu Reeves, Laurence Fishburne",
+      "id": 7,
+      "title": "The Matrix",
+      "genre": "Sci-Fi",
+      "releaseDate": "Mar 31, 1999, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "cast": "Tom Hanks, Robin Wright",
+      "id": 8,
+      "title": "Forrest Gump",
+      "genre": "Drama",
+      "releaseDate": "Jul 6, 1994, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "cast": "Elijah Wood, Ian McKellen",
+      "id": 9,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "genre": "Fantasy",
+      "releaseDate": "Dec 19, 2001, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "cast": "Robert Downey Jr., Chris Evans",
+      "id": 10,
+      "title": "The Avengers",
+      "genre": "Action",
+      "releaseDate": "Apr 11, 2012, 12:00:00 AM",
+      "isAvailble": true
+    }
+  ],
+  "games": [
+    {
+      "platform": "Embark on an epic adventure as Link",
+      "id": 1,
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "genre": "Action-Adventure",
+      "releaseDate": "Mar 3, 2017, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "platform": "Experience life in the Wild West",
+      "id": 2,
+      "title": "Red Dead Redemption 2",
+      "genre": "Action-Adventure",
+      "releaseDate": "Oct 26, 2018, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "platform": "Embark on a monster-hunting adventure as Geralt of Rivia",
+      "id": 3,
+      "title": "The Witcher 3: Wild Hunt",
+      "genre": "Action-RPG",
+      "releaseDate": "May 19, 2015, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "platform": "Join Mario on a globe-trotting journey to rescue Princess Peach",
+      "id": 4,
+      "title": "Super Mario Odyssey",
+      "genre": "Platformer",
+      "releaseDate": "Oct 27, 2017, 12:00:00 AM",
+      "isAvailble": false
+    },
+    {
+      "platform": "Experience the epic adventures of Kratos and Atreus",
+      "id": 5,
+      "title": "God of War (2018)",
+      "genre": "Action-Adventure",
+      "releaseDate": "Apr 20, 2018, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "platform": "Explore the open world of Los Santos in this crime-filled saga",
+      "id": 6,
+      "title": "Grand Theft Auto V",
+      "genre": "Action-Adventure",
+      "releaseDate": "Sep 17, 2013, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "platform": "Build and explore your own virtual world",
+      "id": 7,
+      "title": "Minecraft",
+      "genre": "Sandbox",
+      "releaseDate": "Nov 18, 2011, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "platform": "Survive in a post-apocalyptic world filled with infected creatures",
+      "id": 8,
+      "title": "The Last of Us Part II",
+      "genre": "Action-Adventure",
+      "releaseDate": "Jun 19, 2020, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "platform": "Navigate the wasteland and make choices that shape the future",
+      "id": 9,
+      "title": "Fallout 4",
+      "genre": "Action-RPG",
+      "releaseDate": "Nov 10, 2015, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "platform": "Embark on a Viking adventure in the age of the Dark Ages",
+      "id": 10,
+      "title": "Assassin\u0027s Creed Valhalla",
+      "genre": "Action-Adventure",
+      "releaseDate": "Nov 10, 2020, 12:00:00 AM",
+      "isAvailble": true
+    }
+  ],
+  "books": [
+    {
+      "author": "Alice Thompson",
+      "publisher": "Penguin Books",
+      "id": 1,
+      "title": "The Secret Garden",
+      "genre": "Fiction",
+      "releaseDate": "Mar 15, 2022, 12:00:00 AM",
+      "isAvailble": false
+    },
+    {
+      "author": "Benjamin Martin",
+      "publisher": "HarperCollins",
+      "id": 2,
+      "title": "The Alchemist",
+      "genre": "Fantasy",
+      "releaseDate": "Jul 1, 2021, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "author": "Jane Austen",
+      "publisher": "Thomas Egerton",
+      "id": 3,
+      "title": "Pride and Prejudice",
+      "genre": "Romance",
+      "releaseDate": "Jan 28, 1813, 12:00:00 AM",
+      "isAvailble": false
+    },
+    {
+      "author": "Harper Lee",
+      "publisher": "J. B. Lippincott \u0026 Co.",
+      "id": 4,
+      "title": "To Kill a Mockingbird",
+      "genre": "Classic",
+      "releaseDate": "Jul 11, 1960, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "author": "George Orwell",
+      "publisher": "Secker \u0026 Warburg",
+      "id": 5,
+      "title": "1984",
+      "genre": "Dystopian",
+      "releaseDate": "Jun 8, 1949, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "author": "F. Scott Fitzgerald",
+      "publisher": "Charles Scribner\u0027s Sons",
+      "id": 6,
+      "title": "The Great Gatsby",
+      "genre": "Fiction",
+      "releaseDate": "Apr 10, 1925, 12:00:00 AM",
+      "isAvailble": false
+    },
+    {
+      "author": "J.K. Rowling",
+      "publisher": "Bloomsbury Publishing",
+      "id": 7,
+      "title": "Harry Potter and the Philosopher\u0027s Stone",
+      "genre": "Fantasy",
+      "releaseDate": "Jun 26, 1997, 12:00:00 AM",
+      "isAvailble": false
+    },
+    {
+      "author": "J.R.R. Tolkien",
+      "publisher": "George Allen \u0026 Unwin",
+      "id": 8,
+      "title": "The Hobbit",
+      "genre": "Fantasy",
+      "releaseDate": "Sep 21, 1937, 12:00:00 AM",
+      "isAvailble": true
+    },
+    {
+      "author": "J.D. Salinger",
+      "publisher": "Little, Brown and Company",
+      "id": 9,
+      "title": "The Catcher in the Rye",
+      "genre": "Coming-of-age",
+      "releaseDate": "Jul 16, 1951, 12:00:00 AM",
+      "isAvailble": false
+    },
+    {
+      "author": "C.S. Lewis",
+      "publisher": "Geoffrey Bles",
+      "id": 10,
+      "title": "The Chronicles of Narnia: The Lion, the Witch, and the Wardrobe",
+      "genre": "Fantasy",
+      "releaseDate": "Oct 16, 1950, 12:00:00 AM",
+      "isAvailble": true
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "address": "123 Main Street",
+      "phone": "1234567890",
+      "email": "johnsmith@example.com",
+      "rentals": [
+        {
+          "id": 13,
+          "item": {
+            "id": 3,
+            "title": "Pride and Prejudice",
+            "genre": "Romance",
+            "releaseDate": "Jan 28, 1813, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 1,
+            "name": "John Smith",
+            "address": "123 Main Street",
+            "phone": "1234567890",
+            "email": "johnsmith@example.com",
+            "rentals": []
+          }
+        },
+        {
+          "id": 16,
+          "item": {
+            "id": 6,
+            "title": "The Great Gatsby",
+            "genre": "Fiction",
+            "releaseDate": "Apr 10, 1925, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 1,
+            "name": "John Smith",
+            "address": "123 Main Street",
+            "phone": "1234567890",
+            "email": "johnsmith@example.com",
+            "rentals": []
+          }
+        },
+        {
+          "id": 13,
+          "item": {
+            "author": "Jane Austen",
+            "publisher": "Thomas Egerton",
+            "id": 3,
+            "title": "Pride and Prejudice",
+            "genre": "Romance",
+            "releaseDate": "Jan 28, 1813, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 1,
+            "name": "John Smith",
+            "address": "123 Main Street",
+            "phone": "1234567890",
+            "email": "johnsmith@example.com",
+            "rentals": []
+          }
+        },
+        {
+          "id": 16,
+          "item": {
+            "author": "F. Scott Fitzgerald",
+            "publisher": "Charles Scribner\u0027s Sons",
+            "id": 6,
+            "title": "The Great Gatsby",
+            "genre": "Fiction",
+            "releaseDate": "Apr 10, 1925, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 1,
+            "name": "John Smith",
+            "address": "123 Main Street",
+            "phone": "1234567890",
+            "email": "johnsmith@example.com",
+            "rentals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Emily Johnson",
+      "address": "456 Oak Avenue",
+      "phone": "9876543210",
+      "email": "emilyjohnson@example.com",
+      "rentals": [
+        {
+          "id": 21,
+          "item": {
+            "id": 1,
+            "title": "The Secret Garden",
+            "genre": "Fiction",
+            "releaseDate": "Mar 15, 2022, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 2,
+            "name": "Emily Johnson",
+            "address": "456 Oak Avenue",
+            "phone": "9876543210",
+            "email": "emilyjohnson@example.com",
+            "rentals": []
+          }
+        },
+        {
+          "id": 27,
+          "item": {
+            "id": 7,
+            "title": "Harry Potter and the Philosopher\u0027s Stone",
+            "genre": "Fantasy",
+            "releaseDate": "Jun 26, 1997, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 2,
+            "name": "Emily Johnson",
+            "address": "456 Oak Avenue",
+            "phone": "9876543210",
+            "email": "emilyjohnson@example.com",
+            "rentals": []
+          }
+        },
+        {
+          "id": 21,
+          "item": {
+            "author": "Alice Thompson",
+            "publisher": "Penguin Books",
+            "id": 1,
+            "title": "The Secret Garden",
+            "genre": "Fiction",
+            "releaseDate": "Mar 15, 2022, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 2,
+            "name": "Emily Johnson",
+            "address": "456 Oak Avenue",
+            "phone": "9876543210",
+            "email": "emilyjohnson@example.com",
+            "rentals": []
+          }
+        },
+        {
+          "id": 27,
+          "item": {
+            "author": "J.K. Rowling",
+            "publisher": "Bloomsbury Publishing",
+            "id": 7,
+            "title": "Harry Potter and the Philosopher\u0027s Stone",
+            "genre": "Fantasy",
+            "releaseDate": "Jun 26, 1997, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 2,
+            "name": "Emily Johnson",
+            "address": "456 Oak Avenue",
+            "phone": "9876543210",
+            "email": "emilyjohnson@example.com",
+            "rentals": []
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "address": "789 Elm Street",
+      "phone": "5555555555",
+      "email": "michaelbrown@example.com",
+      "rentals": [
+        {
+          "id": 39,
+          "item": {
+            "id": 9,
+            "title": "The Catcher in the Rye",
+            "genre": "Coming-of-age",
+            "releaseDate": "Jul 16, 1951, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 3,
+            "name": "Michael Brown",
+            "address": "789 Elm Street",
+            "phone": "5555555555",
+            "email": "michaelbrown@example.com",
+            "rentals": []
+          }
+        },
+        {
+          "id": 34,
+          "item": {
+            "id": 4,
+            "title": "Super Mario Odyssey",
+            "genre": "Platformer",
+            "releaseDate": "Oct 27, 2017, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 3,
+            "name": "Michael Brown",
+            "address": "789 Elm Street",
+            "phone": "5555555555",
+            "email": "michaelbrown@example.com",
+            "rentals": []
+          }
+        },
+        {
+          "id": 39,
+          "item": {
+            "author": "J.D. Salinger",
+            "publisher": "Little, Brown and Company",
+            "id": 9,
+            "title": "The Catcher in the Rye",
+            "genre": "Coming-of-age",
+            "releaseDate": "Jul 16, 1951, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 3,
+            "name": "Michael Brown",
+            "address": "789 Elm Street",
+            "phone": "5555555555",
+            "email": "michaelbrown@example.com",
+            "rentals": []
+          }
+        },
+        {
+          "id": 34,
+          "item": {
+            "platform": "Join Mario on a globe-trotting journey to rescue Princess Peach",
+            "id": 4,
+            "title": "Super Mario Odyssey",
+            "genre": "Platformer",
+            "releaseDate": "Oct 27, 2017, 12:00:00 AM",
+            "isAvailble": false
+          },
+          "customer": {
+            "id": 3,
+            "name": "Michael Brown",
+            "address": "789 Elm Street",
+            "phone": "5555555555",
+            "email": "michaelbrown@example.com",
+            "rentals": []
+          }
+        }
+      ]
+    }
+  ]
+}

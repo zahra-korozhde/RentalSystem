@@ -12,7 +12,7 @@ public class Rental {
     public Rental( Item item , Customer customer , int id){
         this.id = id;
         this.item = item;
-        this.customer = customer;
+        this.customer = new Customer(customer.getName(),customer.getAddress(),customer.getPhone(),customer.getEmail(),customer.getId());
     }
 
 

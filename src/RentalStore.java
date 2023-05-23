@@ -37,12 +37,15 @@ public class RentalStore {
 
     public void rentItem(Item item, Customer customer) {
         item.setAvailble(false);
-        this.getAvailbleItem().remove(item);
+//        this.getAvailbleItem().remove(item);
         int itemId = item.getId();
         int costomerId = customer.getId();
         String s = Integer.toString(costomerId).concat(Integer.toString(itemId));
         int id = Integer.parseInt(s);
         Rental r = new Rental(item, customer, id);
+        if (customer.rentals == null){
+            customer.rentals = new ArrayList<>();
+        }
         customer.rentals.add(r);
 
 
@@ -77,14 +80,11 @@ public class RentalStore {
         for (int i = 0; i < items.size(); i++) {
             if (items.get(i).getId() == id) {
                 test3 = true;
-                System.out.println("ok!");
                 return items.get(i);
-            } else {
-                System.out.println("this is not item");
             }
-
         }
-
+        System.out.println("this is not " +
+                "item");
 
         return null;
     }
